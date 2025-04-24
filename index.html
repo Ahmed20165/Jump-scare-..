@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Surprise Page</title>
+  <title>Jump Scare</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      background-color: black;
+      background: black;
       color: white;
       font-family: sans-serif;
       text-align: center;
@@ -53,7 +53,7 @@
   </div>
 
   <div id="scare">
-    <img src="https://i.imgur.com/Z9a5NjE.jpg" alt="Scary Image">
+    <img src="scary.jpg" alt="Scary Image">
     <audio id="scream" src="https://www.soundjay.com/human/sounds/scream-01.mp3" preload="auto"></audio>
   </div>
 
@@ -65,7 +65,7 @@
         const scare = document.getElementById("scare");
         scare.style.display = "flex";
         document.getElementById("scream").play();
-      }, 1000); // Delay before scare (in ms)
+      }, 1000);
     });
   </script>
 </body>
